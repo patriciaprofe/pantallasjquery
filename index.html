@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+     crossorigin="anonymous"></script>
+    <title>ejemplo jquery</title>
+    <script>
+        $(document).ready(function(){ 
+          $('input[type="radio"]').on("change", function(){
+            $("body").css("background-color", this.value);
+          });
+        });
+    </script>
+ </head>
+  <body>
+ <h2>Selecciona un color para cambiar el fondo:</h2>
+     <input type="radio" id="rojo" name="color" value="red">
+     <label for="rojo">Rojo</label><br>
+     <input type="radio" id="azul" name="color" value="blue">
+     <label for="azul">Azul</label><br>
+     <input type="radio" id="verde" name="color" value="green">
+     <label for="verde">Verde</label><br>
+</body>
+</html>
